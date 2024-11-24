@@ -21,7 +21,7 @@ body {
     background-color: #FBD282;
     border: 5px solid #A9500D;
     border-radius: 15px;
-    padding: 20px 30px;
+    padding: 40px 30px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 350px;
@@ -31,11 +31,20 @@ body {
     display: flex;
     align-items: center;
     background-color: #F8BA65;
-    border: 2px solid #612506;
+    border: 2px solid #7F3701;
     border-radius: 25px;
     padding: 10px 15px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.fullname {
+    display: flex;
+    gap: 13px;
+}
+
+#firstname, #lastname {
+    width: 130px;
 }
 
 .buttons {
@@ -49,7 +58,22 @@ input {
     background: none;
     font-size: 0.9rem;
     color: #612506;
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Pixelify Sans", sans-serif;
+    flex: 1;
+}
+
+select {
+    border: none;
+    outline: none;
+    background: none;
+    flex: 1;
+    font-size: 0.9rem;
+    color: #C85124;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+input::placeholder {
+    color: #C85124;
 }
 
 .icon {
