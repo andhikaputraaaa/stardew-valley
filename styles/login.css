@@ -1,5 +1,5 @@
 body {
-    background-image: url('assets/Stardew\ Valley\ Background\ 1.jpg'); 
+    background-image: url('/assets/Stardew\ Valley\ Background\ 1.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -70,6 +70,10 @@ select {
     font-size: 0.9rem;
     color: #C85124;
     font-family: "Pixelify Sans", sans-serif;
+}
+
+select option:disabled {
+    font-style: italic;
 }
 
 input::placeholder {
