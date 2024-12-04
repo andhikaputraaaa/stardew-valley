@@ -1,0 +1,115 @@
+body {
+    background-image: url('/assets/Stardew\ Valley\ Background\ 1.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.profile-container {
+    width: 800px;
+    margin: 50px auto;
+    background: #FFC69B;
+    border: 10px solid #A9500D;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Tambahkan position relative */
+    overflow: visible;
+}
+
+.profile-header {
+    height: 3rem;
+    position: absolute;
+    top: -3rem;
+    right: 15px;
+    background: #FFCF85;
+    padding: 0px 20px;
+    border: 5px solid #A9500D;
+    color: #D15456;
+    display: flex;
+    align-items: center;
+}
+
+.profile-content {
+    display: flex;
+}
+
+.avatar {
+    width: 30%;
+}
+
+.user-info {
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    width: 70%;
+    color: #A9500D;
+    height: 200px;
+}
+
+.role {
+    position: absolute;
+    bottom: 10px; 
+    right: 20px; 
+    width: 15%;
+}
+
+a {
+    text-decoration: underline;
+    color: #A9500D;
+}
+
+
+.box {
+    background: #FFCF85;
+    padding: 10px;
+    border: 5px solid #C07C55;
+    color: #51150C;
+    font-weight: bold;  
+}
+
+.avatar img {
+    width: 150px;
+    height: auto;
+    border: 5px solid #A9500D;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.avatar p {
+    font-size: 1rem;
+    color: #51150C;
+    margin: 0;
+}
+
+.btn {
+    font-size: 2rem;
+    background-color: #F8BA65;
+    color: #51150C;
+    border: #A9500D 3px solid;
+    padding: 15px 50px;
+    cursor: pointer;
+    font-family: "Pixelify Sans", sans-serif;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+}
+
+.back-btn {
+    position: fixed;
+    bottom: 50px;
+    left: 80px;
+    font-size: 1.5rem;
+    background-color: #F8BA65;
+    color: #D15456;
+    border: #A9500D 4px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+    text-decoration: none;
+    font-family: "Pixelify Sans", sans-serif;
+}
