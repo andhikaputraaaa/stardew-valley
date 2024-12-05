@@ -53,17 +53,22 @@ mysqli_close($connect);
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('assets/background-index.jpg');
+        }
+    </style>
 </head>
 <body>
     <div class="form-container">
         <form action="register.php" method="post">
             <div class="fullname">
-                <div class="form-group"><input type="text" id="firstname" name="firstname" placeholder="First Name" required></div>
-                <div class="form-group"><input type="text" id="lastname" name="lastname" placeholder="Last Name" required></div>
+                <div class="form-group"><input type="text" id="firstname" name="firstname" placeholder="First Name" autocomplete="off" required></div>
+                <div class="form-group"><input type="text" id="lastname" name="lastname" placeholder="Last Name" autocomplete="off" required></div>
             </div>
             <div class="form-group">
                 <label for="email"><span class="icon">👤</span></label>
-                <input type="email" id="email" name="email" placeholder="Input your email here" required>
+                <input type="email" id="email" name="email" placeholder="Input your email here" autocomplete="off" required>
             </div>
             <div class="form-group">
                 <label for="password"><span class="icon">🔒</span></label>

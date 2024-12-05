@@ -8,6 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('assets/stardew-valley1.jpg');
+        }
+    </style>
+    <script>
+        function pindah(url){
+            window.location = url;
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -16,7 +26,7 @@
     </nav>
 
     <div class="profile-icon">
-        <img src="/assets/chicken.png" alt="profile icon">
+        <img src="assets/chicken.png" alt="profile icon" onclick="pindah('profil.html')">
     </div>
 
     <div class="welcome-message">
