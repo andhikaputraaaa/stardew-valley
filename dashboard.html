@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles/dashboard.css">
+    <script src="script/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
@@ -13,16 +14,11 @@
             background-image: url('assets/stardew-valley1.jpg');
         }
     </style>
-    <script>
-        function pindah(url){
-            window.location = url;
-        }
-    </script>
 </head>
 <body>
     <nav>
-        <button>FISHING</button>
-        <button>INVENTORY</button>
+        <button onclick="pindah('fishing.html')">FISHING</button>
+        <button onclick="pindah('inventory.html')">INVENTORY</button>
     </nav>
 
     <div class="profile-icon">

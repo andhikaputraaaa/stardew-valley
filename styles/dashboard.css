@@ -41,14 +41,18 @@ button:hover {
     top: 50px;
     right: 50px;
     width: 70px;
-    height: 70px;
 }
 
 .profile-icon img {
     width: 100%;
-    height: 100%;
     border-radius: 50%;
-    border: 3px solid #A9500D;
+    border: 5px solid #A9500D;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.profile-icon img:hover{
+    transform: scale(1.05);
 }
 
 .welcome-message {
