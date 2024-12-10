@@ -10,6 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="game-container">
+        <h1>Fishing Mini Game</h1>
+        <div id="fishing-area">
+          <div id="fish"></div>
+          <div id="bar"></div>
+        </div>
+        <div id="controls">
+          <button id="up-button" class="btn">Move Up</button>
+          <button id="down-button" class="btn">Move Down</button>
+          <button id="start-button" class="btn">Start Fishing</button>
+          <p>Progress: <span id="progress">0%</span></p>
+        </div>
+    </div>
+    <button class="back-btn" onclick="window.history.back();">BACK</button>
+    <script src="/script/script.js"></script>
 </body>
 </html>
