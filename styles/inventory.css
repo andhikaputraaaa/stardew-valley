@@ -1,5 +1,5 @@
 body {
-    background-image: url('/assets/stardew-valley1.jpg'); 
+    background-image: url('./assets/stardew-valley1.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
