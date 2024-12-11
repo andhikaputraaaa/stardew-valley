@@ -16,10 +16,26 @@ h1 {
     color: #D15456;
 }
 
-#game-container {
+.profile-icon {
     position: absolute;
-    left: 600px;
-    top: 80px;
+    top: 50px;
+    right: 50px;
+    width: 70px;
+}
+
+.profile-icon img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #A9500D;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.profile-icon img:hover{
+    transform: scale(1.05);
+}
+
+#game-container {
     text-align: center;
     background-color: #F8BA65;
     border: 5px solid #A9500D;
@@ -90,3 +106,4 @@ h1 {
     text-decoration: none;
     font-family: "Pixelify Sans", sans-serif;
 }
+

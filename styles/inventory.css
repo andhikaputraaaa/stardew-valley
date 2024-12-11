@@ -1,0 +1,87 @@
+body {
+    background-image: url('/assets/stardew-valley1.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.profile-icon {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 70px;
+}
+
+.profile-icon img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #A9500D;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.profile-icon img:hover{
+    transform: scale(1.05);
+}
+
+.inventory-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0px;
+    padding: 16px;
+    background-color: #FBD282;
+    border: 5px solid #A9500D;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    background-color: #FBD282;
+    border: 4px solid #A9500D;
+    top: -4rem;
+    border-bottom: none;
+    border-radius: 3px;
+}
+
+.inventory-slot {
+    width: 48px;
+    height: 48px;
+    background-color: #e9c391;
+    border: 2px solid #c49c68;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory-slot img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.close-button {
+    position: absolute;
+    top: -3rem;
+    right: -1.5rem;
+    width: 32px;
+    height: 32px;
+    background-color: #FBD282;
+    color: #C85124;
+    border: 3px solid #A9500D;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
