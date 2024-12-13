@@ -46,7 +46,7 @@ mysqli_close($connect);
             <div class="user-info">
                 <div class="box"><h2>Account</h2></div>
                 <p><?php echo htmlspecialchars($email); ?></p>
-                <a href="#">change password</a>
+                <a href="changepass.html">change password</a>
             </div>
         <div class="role">
             <p>Role: 

@@ -17,6 +17,13 @@ body {
     margin-bottom: 40px; /* Jarak antara logo dan input */
 }
 
+h1{
+    color: #C85124;
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
 .form-container {
     background-color: #FBD282;
     border: 5px solid #A9500D;
