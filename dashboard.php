@@ -36,6 +36,6 @@ $user_name = $_SESSION['user_name'];
         <h1>HALO, <?php echo htmlspecialchars($user_name); ?>!</h1>
     </div>
 
-<script src="script/script.js"></script>
+<script src="script/fishing.js"></script>
 </body>
 </html>

@@ -1,55 +1,54 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const filterDropdown = document.getElementById('filter');
     const searchInput = document.getElementById('search-input');
     const items = document.querySelectorAll('tbody tr');
-  
-    searchInput.addEventListener('input', (e) => {
-      const query = e.target.value.toLowerCase();
-  
-      items.forEach((item) => {
-        if (item.textContent.toLowerCase().includes(query)) {
-          item.style.display = '';
+
+    let currentFilter = '';
+    let currentOrder = 'asc';
+
+    filterDropdown.addEventListener('change', () => {
+        const selectedFilter = filterDropdown.value;
+
+        if (currentFilter === selectedFilter) {
+            currentOrder = currentOrder === 'asc' ? 'desc' : 'asc';
         } else {
-          item.style.display = 'none';
+            currentOrder = 'asc';
         }
-      });
-    });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-    let currentPage = 1;
-    const totalPages = document.querySelectorAll('tbody[data-page]').length;
+        currentFilter = selectedFilter;
 
-    function showPage(page) {
-        document.querySelectorAll('tbody[data-page]').forEach(function(tbody) {
-            tbody.classList.add('hidden');
-        });
-        document.querySelector(`tbody[data-page="${page}"]`).classList.remove('hidden');
-    }
-
-    document.getElementById('prev').addEventListener('click', function() {
-        if (currentPage > 1) {
-            currentPage--;
-            showPage(currentPage);
-        }
+        window.location.href = `?filter=${currentFilter}&order=${currentOrder}`;
     });
 
-    document.getElementById('next').addEventListener('click', function() {
-        if (currentPage < totalPages) {
-            currentPage++;
-            showPage(currentPage);
-        }
-    });
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
 
-    // Event listener untuk tombol halaman langsung
-    document.querySelectorAll('.nav.num').forEach(function(button) {
-        button.addEventListener('click', function() {
-            const page = parseInt(this.textContent);
-            if (page >= 1 && page <= totalPages) {
-                currentPage = page;
-                showPage(currentPage);
+        items.forEach((item) => {
+            if (item.textContent.toLowerCase().includes(query)) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
             }
         });
     });
 
-    showPage(currentPage);
+    const deleteButtons = document.querySelectorAll('.delete-user');
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            const userId = button.getAttribute('data-id');
+            const userName = button.getAttribute('data-name');
+            const userRole = button.getAttribute('data-role');
+
+            if (userRole === 'mayor') {
+                alert('Tidak dapat menghapus Mayor!');
+            } else {
+                const confirmation = confirm(`Ingin menghapus akun dengan nama ${userName}?`);
+                if (confirmation) {
+                    window.location.href = `?delete_id=${userId}`;
+                }
+            }
+        });
+    });
 });

@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $gender = $_POST["avatar"];
 
     if ($password !== $confirm_pass) {
-        echo "<script>alert('Password dan konfirmasi password tidak sama.');</script>";
+        echo "<script>alert('Password dan konfirmasi password tidak sama!');</script>";
     } else {
         $check_email_query = "SELECT email FROM user WHERE email = ?";
         $stmt = mysqli_prepare($connect, $check_email_query);

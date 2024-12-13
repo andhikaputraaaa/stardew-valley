@@ -13,3 +13,5 @@ CREATE TABLE user (
     password VARCHAR(255) NOT NULL,
     gender ENUM('Male', 'Female') NOT NULL
 );
+
+INSERT INTO user (role, first_name, last_name, email, password, gender) VALUES ('mayor', 'mayo', 'r', 'mayor@gmail.com', '12345678', 'Male')
