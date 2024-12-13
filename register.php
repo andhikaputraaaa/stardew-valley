@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             $hashed_password = password_hash($password, PASSWORD_BCRYPT);
             $sql = "INSERT INTO user (role, first_name, last_name, email, password, gender)
-                    VALUES ('user', ?, ?, ?, ?, ?)";
+                    VALUES ('villager', ?, ?, ?, ?, ?)";
             $stmt = mysqli_prepare($connect, $sql);
             mysqli_stmt_bind_param($stmt, "sssss", $first_name, $last_name, $email, $hashed_password, $gender);
 

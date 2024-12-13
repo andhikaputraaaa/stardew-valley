@@ -6,7 +6,7 @@ USE stardew_valley;
 
 CREATE TABLE user (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    role varchar(5) NOT NULL,
+    role varchar(10) NOT NULL,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,

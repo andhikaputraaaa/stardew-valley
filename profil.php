@@ -1,3 +1,27 @@
+<?php
+session_start();
+include 'database.php'; // Menghubungkan ke database
+
+if (!isset($_SESSION['user_id'])) {
+    // Redirect ke halaman login jika belum login
+    header("Location: login.php");
+    exit();
+}
+
+// Ambil data dari session
+$user_id = $_SESSION['user_id'];
+
+// Query untuk mendapatkan data user dari database
+$sql = "SELECT CONCAT(first_name, ' ', last_name) AS full_name, email, role FROM user WHERE id = ?";
+$stmt = mysqli_prepare($connect, $sql);
+mysqli_stmt_bind_param($stmt, "i", $user_id);
+mysqli_stmt_execute($stmt);
+mysqli_stmt_bind_result($stmt, $full_name, $email, $role);
+mysqli_stmt_fetch($stmt);
+mysqli_stmt_close($stmt);
+
+mysqli_close($connect);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,16 +46,16 @@
         <div class="profile-content">
             <div class="avatar">
                 <img src="assets/chicken.png" alt="Avatar">
-                <p class="box">{nama user}</p>
+                <p class="box"><?php echo htmlspecialchars($full_name); ?></p>
             </div>
             <div class="user-info">
                 <div class="box"><h2>Account</h2></div>
-                <p>farah.maulida@nhs.unsoed.ac.id</p>
+                <p><?php echo htmlspecialchars($email); ?></p>
                 <a href="#">change password</a>
             </div>
         <div class="role">
             <p>Role: 
-                <div class="box"><span>Villager</span></div>
+                <div class="box"><span><?php echo htmlspecialchars($role); ?></span></div>
             </p>
         </div>
         </div>

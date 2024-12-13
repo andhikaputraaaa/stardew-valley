@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 echo "<script>
                         alert('Login berhasil. Selamat datang, $first_name!');
-                        window.location.href = 'dashboard.html';
+                        window.location.href = 'dashboard.php';
                       </script>";
             } else {
                 echo "<script>alert('Password salah.');</script>";

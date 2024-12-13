@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$user_name = $_SESSION['user_name'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,11 +30,11 @@
     </nav>
 
     <div class="profile-icon">
-        <img src="assets/chicken.png" alt="profile icon" onclick="pindah('profil.html')">
+        <img src="assets/chicken.png" alt="profile icon" onclick="pindah('profil.php')">
     </div>
 
     <div class="welcome-message">
-        <h1>HALO, (USER)!</h1>
+        <h1>HALO, <?php echo htmlspecialchars($user_name); ?>!</h1>
     </div>
 
 <script src="script/script.js"></script>
