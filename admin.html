@@ -15,16 +15,23 @@
             <h1>Administrator</h1>
         </div>
         <div class="filter-search">
+            <div class="filter">
+            <img src="assets/Filter.png" alt="filter">
             <select name="filter" id="filter">
                 <option disabled selected hidden>Filter</option>
                 <option value="id">ID</option>
                 <option value="name">Name</option>
                 <option value="email">Email</option>
             </select>
-            <input type="text" placeholder="Search">
+            </div>
+            <div class="search">
+            <img src="assets/search.png" alt="search">
+            <input type="text" id="search-input" placeholder="Search">
+            </div>
         </div>
         <div class="table-container">
             <table>
+                <thead>
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
@@ -32,6 +39,8 @@
                     <th>Password</th>
                     <th>Action</th>
                 </tr>   
+                </thead>
+                <tbody data-page="1">
                 <tr>
                     <td>1. </td>
                     <td>Brandon Salim </td>
@@ -40,57 +49,161 @@
                     <td><a href="#"><img src="assets/trash.png" alt="delete"></a></td>
                 </tr>
                 <tr>
-                    <td>1. </td>
-                    <td>Brandon Salim </td>
-                    <td>brandon@123</td>
+                    <td>2. </td>
+                    <td>Andhika Putra  </td>
+                    <td>andhika@123</td>
                     <td>123</td>
                     <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
                 </tr>
                 <tr>
-                    <td>1. </td>
-                    <td>Brandon Salim </td>
-                    <td>brandon@123</td>
+                    <td>3. </td>
+                    <td>Farah</td>
+                    <td>farah@123</td>
                     <td>123</td>
                     <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
                 </tr>
                 <tr>
-                    <td>1. </td>
-                    <td>Brandon Salim </td>
-                    <td>brandon@123</td>
+                    <td>4. </td>
+                    <td>Wildan </td>
+                    <td>wildan@123</td>
                     <td>123</td>
                     <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
                 </tr>
                 <tr>
-                    <td>1. </td>
-                    <td>Brandon Salim </td>
-                    <td>brandon@123</td>
-                    <td>123</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
                 </tr>
                 <tr>
-                    <td>1. </td>
-                    <td>Brandon Salim </td>
-                    <td>brandon@123</td>
-                    <td>123</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
                 </tr>
                 <tr>
-                    <td>1. </td>
-                    <td>Brandon Salim </td>
-                    <td>brandon@123</td>
-                    <td>123</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
                 </tr>
+                </tbody>
+                <tbody data-page="2" class="hidden">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                </tbody>
+                <tbody data-page="3" class="hidden">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#"><img src="assets/trash.png" alt="delete"></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <div class="nav-page">
-            <button class="nav">Prev</button>
-            <button class="nav num">1</button>
-            <button class="nav num">2</button>
-            <button class="nav num">3</button>
-            <button class="nav">Next</button>
+            <button class="nav" id="prev">Prev</button>
+            <button class="nav num" id="page1">1</button>
+            <button class="nav num" id="page2">2</button>
+            <button class="nav num" id="page3">3</button>
+            <button class="nav" id="next">Next</button>
         </div>
     </div>
     <button class="back-btn" onclick="window.history.back();">BACK</button>
+    <script src="script/admin.js"></script>
 </body>
 </html>

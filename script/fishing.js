@@ -2,6 +2,8 @@ function pindah(url){
     window.location = url;
 }
 
+
+// Fishing Game
 const bar = document.getElementById('bar');
 const fish = document.getElementById('fish');
 const startButton = document.getElementById('start-button');
