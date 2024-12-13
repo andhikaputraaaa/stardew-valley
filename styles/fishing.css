@@ -1,4 +1,5 @@
 body {
+    background: url('../assets/fishing.png');
     background-size: contain;
     background-position: center center;
     background-attachment: fixed;

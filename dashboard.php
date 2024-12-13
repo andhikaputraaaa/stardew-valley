@@ -17,16 +17,15 @@ $user_name = $_SESSION['user_name'];
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-image: url('assets/stardew-valley1.jpg');
-        }
-    </style>
 </head>
 <body>
     <nav>
-        <button onclick="pindah('fishing.html')">FISHING</button>
-        <button onclick="pindah('inventory.html')">INVENTORY</button>
+        <ul>
+            <div class="navbar-container">
+            <li><a href="fishing.html">FISHING</a></li>
+            <li><a href="inventory.html">INVENTORY</a></li>
+            </div>
+        </ul>
     </nav>
 
     <div class="profile-icon">

@@ -1,0 +1,159 @@
+body {
+    background-image: url('../assets/background-index.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Pixelify Sans", sans-serif;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    background-color: #FFC69B;
+    border: 10px solid #A9500D;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 1000px;
+}
+
+.admin-header {
+    position: absolute;
+    background-color: #FFC69B;
+    border: 5px solid #A9500D;
+    color: #D15456;
+    padding: 0px 20px;
+    top: -5rem;
+    right: 15px;
+}
+
+.filter-search {
+    display: flex;
+    gap: 20px;
+    width: 300px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.3rem;
+    background-color: #FFCF85;
+    color: #51150C;
+    border: 3px solid #C07C55;
+    font-family: "Pixelify Sans", sans-serif;
+    flex: 1;
+}
+
+input::placeholder {
+    color: #51150C;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+select {
+    border: none;
+    outline: none;
+    background: none;
+    flex: 1;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: #FFCF85;
+    color: #51150C;
+    border: 3px solid #C07C55;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+option {
+    background-color: #FFCF85;
+    color: #51150C;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+option:hover {
+    background-color: #F8BA65;
+    color: #51150C;
+    border: 3px solid #C07C55;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.table-container {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th{
+    border: 3px solid #C07C55;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+
+table, td{
+    border: 3px solid #C07C55;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+table, td:nth-child(5){
+    text-align: center;
+}
+
+.nav-page {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #FFCF85;
+    color: #51150C;
+    border: 5px solid #C07C55;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px 25px;
+    transition: background-color 0.5s ease;
+}
+
+button.nav:hover {
+    background-color: #F8BA65;
+    color: #51150C;
+    border: 5px solid #C07C55;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.num {
+    padding: 10px 20px;
+}
+
+.back-btn {
+    position: fixed;
+    bottom: 50px;
+    left: 80px;
+    font-size: 1.5rem;
+    background-color: #F8BA65;
+    color: #D15456;
+    border: #A9500D 4px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+    text-decoration: none;
+    font-family: "Pixelify Sans", sans-serif;
+}

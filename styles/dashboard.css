@@ -1,5 +1,5 @@
 body {
-    background-image: url('/assets/stardew-valley1.jpg'); 
+    background: url('../assets/stardew-valley1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,20 +20,30 @@ nav {
     width: 100%;
 }
 
-button {
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
     font-size: 2rem;
     background-color: #F8BA65;
     color: #C85124;
     border: #A9500D 3px solid;
     padding: 15px 100px;
-    cursor: pointer;
+    text-decoration: none;
     font-family: "Pixelify Sans", sans-serif;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
-    transition: 0.5s ease;
+    transition: background-color 0.8s ease;
 }
 
-button:hover {
-    font-size: 1.8rem;
+nav a:hover {
+    background-color: #EFAD51;
 }
 
 .profile-icon {
@@ -54,6 +64,7 @@ button:hover {
 .profile-icon img:hover{
     transform: scale(1.05);
 }
+
 
 .welcome-message {
     background-color: #F8BA65;
