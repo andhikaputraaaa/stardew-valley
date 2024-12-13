@@ -1,17 +1,14 @@
 <?php
 session_start();
-include 'database.php'; // Menghubungkan ke database
+include 'database.php';
 
 if (!isset($_SESSION['user_id'])) {
-    // Redirect ke halaman login jika belum login
     header("Location: login.php");
     exit();
 }
 
-// Ambil data dari session
 $user_id = $_SESSION['user_id'];
 
-// Query untuk mendapatkan data user dari database
 $sql = "SELECT CONCAT(first_name, ' ', last_name) AS full_name, email, role FROM user WHERE id = ?";
 $stmt = mysqli_prepare($connect, $sql);
 mysqli_stmt_bind_param($stmt, "i", $user_id);
