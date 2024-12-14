@@ -19,8 +19,8 @@ $user_name = $_SESSION['user_name'];
     <nav>
         <ul>
             <div class="navbar-container">
-            <li><a href="fishing.html">FISHING</a></li>
-            <li><a href="inventory.html">INVENTORY</a></li>
+            <li><a href="fishing.php">FISHING</a></li>
+            <li><a href="inventory.php">INVENTORY</a></li>
             </div>
         </ul>
     </nav>
