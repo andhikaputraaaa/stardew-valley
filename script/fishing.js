@@ -8,7 +8,7 @@ const startButton = document.getElementById('start-button');
 const upButton = document.getElementById('up-button');
 const downButton = document.getElementById('down-button');
 const progressDisplay = document.getElementById('progress');
-let barPosition = 110;
+let barPosition = 120;
 let fishPosition = 50;
 let progress = 0;
 let gameInterval, fishInterval;
@@ -22,7 +22,7 @@ if (direction === 'up') {
 }
 
 if (barPosition < 0) barPosition = 0;
-if (barPosition > 220) barPosition = 220; // Tinggi fishing area - bar height
+if (barPosition > 240) barPosition = 240; // Tinggi fishing area - bar height
 
 bar.style.top = `${barPosition}px`;
 }
@@ -33,6 +33,7 @@ fishPosition += Math.random() * 80 - 40; // Perubahan posisi ikan
 
 if (fishPosition < 0) fishPosition = 0;
 if (fishPosition > 280) fishPosition = 280; // Tinggi fishing area - fish height
+
 
 fish.style.top = `${fishPosition}px`;
 }
@@ -63,7 +64,7 @@ progress = 0;
 progressDisplay.textContent = `${progress}%`;
 
 fishPosition = 50;
-barPosition = 110;
+barPosition = 120;
 bar.style.top = `${barPosition}px`;
 fish.style.top = `${fishPosition}px`;
 
@@ -101,7 +102,7 @@ if (success) {
 }
 
 // Reset posisi bar dan ikan
-barPosition = 110;
+barPosition = 120;
 fishPosition = 50;
 bar.style.top = `${barPosition}px`;
 fish.style.top = `${fishPosition}px`;

@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['fish_name']) && isset
             <p>Progress: <span id="progress">0%</span></p>
         </div>
     </div>
-    <button class="back-btn" onclick="window.history.back();">BACK</button>
+    <button class="back-btn" onclick="pindah('dashboard.php');">BACK</button>
 
     <form id="fish-form" method="POST" style="display: none;">
         <input type="hidden" name="fish_name" id="fish-name">
