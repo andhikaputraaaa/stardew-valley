@@ -51,6 +51,7 @@ mysqli_close($connect);
                 <div class="box"><span><?php echo htmlspecialchars($role); ?></span></div>
             </p>
         </div>
+        <button class="logout-btn">LOG OUT</button>
         </div>
         <!-- <button class="btn">LOG OUT</button> -->
     </div>

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/StardewValley.ttf') format('truetype');
+}
+
 body {
     background-image: url('../assets/background-index.jpg');
     background-size: cover;
@@ -8,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "CustomFont", sans-serif;
     position: relative;
 }
 
@@ -30,6 +35,11 @@ body {
     padding: 0px 20px;
     top: -5rem;
     right: 15px;
+}
+
+.admin-header h1 {
+    font-size: 36px;
+    font-weight: 500;
 }
 
 .filter-search {
@@ -62,16 +72,17 @@ input {
     border: none;
     outline: none;
     background: none;
-    font-size: 1.2rem;
+    font-weight: 500;
+    font-size: 28px;
     color: #51150C;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "CustomFont", sans-serif;
     flex: 1;
 }
 
 input::placeholder {
     color: #51150C;
-    font-weight: 700;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 28px;
 }
 
 select {
@@ -80,16 +91,16 @@ select {
     background: none;
     color: #51150C;
     flex: 1;
-    font-size: 1.3rem;
-    font-weight: 700;
-    font-family: "Pixelify Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "CustomFont", sans-serif;
 }
 
 option {
     background-color: #FFCF85;
     color: #51150C;
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 .table-container {
@@ -110,7 +121,8 @@ table, th{
     text-align: left;
     margin-top: 20px;
     padding-left: 10px;
-    font-size: 1.2rem;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 table, td{
@@ -135,9 +147,9 @@ button {
     background-color: #FFCF85;
     color: #51150C;
     border: 4px solid #C07C55;
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-family: "CustomFont", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
     padding: 10px 25px;
     transition: background-color 0.5s ease;
 }
@@ -146,9 +158,8 @@ button.nav:hover {
     background-color: #F8BA65;
     color: #51150C;
     border: 4px solid #C07C55;
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -160,7 +171,7 @@ button.nav:hover {
     position: fixed;
     bottom: 50px;
     left: 80px;
-    font-size: 1.5rem;
+    font-size: 24px;
     background-color: #F8BA65;
     color: #D15456;
     border: #A9500D 4px solid;
@@ -168,5 +179,5 @@ button.nav:hover {
     cursor: pointer;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     text-decoration: none;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "CustomFont", sans-serif;
 }
