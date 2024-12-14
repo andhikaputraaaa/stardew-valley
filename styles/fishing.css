@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../fonts/StardewValley.ttf') format('truetype');
+}
+
 body {
     background: url('../assets/fishing.png');
     background-size: contain;
@@ -8,11 +13,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "CustomFont", sans-serif;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 40px;
+    font-weight: 500;
     color: #D15456;
 }
 
@@ -40,7 +46,7 @@ h1 {
     background-color: #F8BA65;
     border: 5px solid #A9500D;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     width: 300px;
   }
   
@@ -84,14 +90,14 @@ h1 {
   
 .btn {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 18px;
     background-color: #D87802;
     color: white;
     border: #A9500D 3px solid;
     border-radius: 5px;
     cursor: pointer;
     margin: 5px;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "CustomFont", sans-serif;
 }
   
 .btn:hover {
@@ -102,7 +108,7 @@ h1 {
     position: fixed;
     bottom: 50px;
     left: 80px;
-    font-size: 1.5rem;
+    font-size: 24px;
     background-color: #F8BA65;
     color: #D15456;
     border: #A9500D 4px solid;
@@ -110,6 +116,6 @@ h1 {
     cursor: pointer;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     text-decoration: none;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "CustomFont", sans-serif;
 }
 

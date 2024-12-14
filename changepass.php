@@ -63,15 +63,15 @@ mysqli_close($connect);
         <h1>Change Password</h1>
         <form action="" method="post">
             <div class="form-group">
-            <label for="currentPass"><span class="icon">🔒</span></label>
+            <label for="currentPass"><img src="assets/pass.png" alt="pass"></label>
             <input type="password" id="currentPass" name="currentPass" placeholder="Input your current password here" required>
             </div>
             <div class="form-group">
-            <label for="newPass"><span class="icon">🔒</span></label>
+            <label for="newPass"><img src="assets/pass.png" alt="pass"></label>
             <input type="password" id="newPass" name="newPass" placeholder="Input your new password here" required>
             </div>
             <div class="form-group">
-            <label for="confirmPass"><span class="icon">🔒</span></label>
+            <label for="confirmPass"><img src="assets/pass.png" alt="pass"></label>
             <input type="password" id="confirmPass" name="confirmPass" placeholder="Confirm your new password here" required>
             </div>
             <button type="submit" class="btn">Submit</button>

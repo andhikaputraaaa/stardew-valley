@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/StardewValley.ttf') format('truetype');
+}
+
 body {
     background: url('../assets/stardew-valley1.jpg');
     background-size: cover;
@@ -8,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "CustomFont", sans-serif;
 }
 
 .profile-icon {
@@ -60,6 +65,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.item-count {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    color: white;
+    padding: 2px 5px;
+    font-size: 18px;
 }
 
 .inventory-slot img {
@@ -76,7 +91,7 @@ body {
     background-color: #FBD282;
     color: #C85124;
     border: 3px solid #A9500D;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "CustomFont", sans-serif;
     font-size: 28px;
     font-weight: bold;
     display: flex;

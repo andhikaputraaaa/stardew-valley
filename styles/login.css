@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/StardewValley.ttf') format('truetype');
+}
+
 body {
     background: url('../assets/background-index.jpg');
     background-size: cover;
@@ -8,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "CustomFont", sans-serif;
 }
 
 .logo{
@@ -51,6 +56,7 @@ h1{
     margin-right: 10px;
     height: 100%;
 }
+
 .fullname {
     display: flex;
     gap: 13px;
@@ -98,14 +104,14 @@ input::placeholder {
 }
 
 .btn {
-    font-size: 1.2rem;
+    font-size: 25px;
     background-color: #D87802;
     color: white;
     border: none;
     border-radius: 35px;
-    padding: 15px 30px;
+    padding: 10px 55px;
     cursor: pointer;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "CustomFont", sans-serif;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-top: 30px;

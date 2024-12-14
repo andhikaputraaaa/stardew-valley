@@ -58,8 +58,8 @@ mysqli_close($connect);
     <div class="form-container">
         <form action="register.php" method="post">
             <div class="fullname">
-                <div class="form-group"><input type="text" id="firstname" name="firstname" placeholder="First Name" autocomplete="off" required></div>
-                <div class="form-group"><input type="text" id="lastname" name="lastname" placeholder="Last Name" autocomplete="off" required></div>
+                <div class="form-group"><input type="text" id="firstname" name="firstname" placeholder="First Name" autocomplete="off" maxlength="15" required></div>
+                <div class="form-group"><input type="text" id="lastname" name="lastname" placeholder="Last Name" autocomplete="off" maxlength="15" required></div>
             </div>
             <div class="form-group">
                 <label for="email"><img src="assets/user.png" alt="user"></label>
