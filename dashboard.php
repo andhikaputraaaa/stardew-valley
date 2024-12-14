@@ -33,6 +33,11 @@ $user_name = $_SESSION['user_name'];
         <h1>HALO, <?php echo htmlspecialchars($user_name); ?>!</h1>
     </div>
 
+    <audio id="bgMusic" autoplay loop hidden>
+        <source src="assets/StardewValley_OST2.mp3" type="audio/mp3">
+    </audio>
+    <script src="script/musik.js"></script>
+
 <script src="script/fishing.js"></script>
 </body>
 </html>

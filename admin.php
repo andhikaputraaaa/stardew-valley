@@ -142,6 +142,12 @@ $total_pages = ceil($total_users / $per_page);
         </div>
     </div>
     <button class="back-btn" onclick="window.history.back();">BACK</button>
+
+    <audio id="bgMusic" autoplay loop hidden>
+        <source src="assets/StardewValley_OST1.mp3" type="audio/mp3">
+    </audio>
+    <script src="script/musik.js"></script>
+    
     <script src="script/admin.js"></script>
 </body>
 </html>

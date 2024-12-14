@@ -51,11 +51,19 @@ mysqli_close($connect);
                 <div class="box"><span><?php echo htmlspecialchars($role); ?></span></div>
             </p>
         </div>
-        <button class="logout-btn">LOG OUT</button>
+        <form action="logout.php" method="POST" style="display: inline;">
+            <button type="submit" class="logout-btn">LOG OUT</button>
+        </form>
         </div>
         <!-- <button class="btn">LOG OUT</button> -->
     </div>
     <button class="back-btn" onclick="pindah('dashboard.php');">BACK</button>
+
+    <audio id="bgMusic" autoplay loop hidden>
+        <source src="assets/StardewValley_OST2.mp3" type="audio/mp3">
+    </audio>
+    <script src="script/musik.js"></script>
+
     <script src="script/fishing.js"></script>
 </body>
 </html>

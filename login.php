@@ -26,12 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 if ($role === 'mayor') {
                     echo "<script>
-                            alert('Login berhasil. Selamat datang, $first_name!');
+                            alert('Hei $first_name.. selamat datang kawan!');
                             window.location.href = 'admin.php';
                           </script>";
                 } else {
                     echo "<script>
-                            alert('Login berhasil. Selamat datang, $first_name!');
+                            alert('Hei $first_name.. selamat datang kawan!');
                             window.location.href = 'dashboard.php';
                           </script>";
                 }
@@ -74,5 +74,10 @@ mysqli_close($connect);
             <button type="submit" class="btn">Sign In</button>
         </form>
     </div>
+
+    <audio id="bgMusic" autoplay loop hidden>
+        <source src="assets/StardewValley_OST1.mp3" type="audio/mp3">
+    </audio>
+    <script src="script/musik.js"></script>
 </body>
 </html>

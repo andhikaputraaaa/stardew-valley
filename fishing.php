@@ -14,11 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['fish_name']) && isset
     $fish_image = mysqli_real_escape_string($connect, $_POST['fish_image']);
 
     $query = "INSERT INTO hasil_mancing (name, image, user_id) VALUES ('$fish_name', '$fish_image', $user_id)";
-    if (mysqli_query($connect, $query)) {
-        $success_message = "You caught a $fish_name! Play again?";
-    } else {
-        $error_message = "Failed to save your catch. Please try again.";
-    }
+    mysqli_query($connect, $query);
 }
 ?>
 <!DOCTYPE html>
@@ -43,8 +39,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['fish_name']) && isset
             <button id="up-button" class="btn">Move Up</button>
             <button id="down-button" class="btn">Move Down</button>
             <button id="start-button" class="btn">Start Fishing</button>
-            <p>Progress: <span id="progress">0%</span></p>
+            <p id="progress">Ayo Memancing!</p>
         </div>
+        <p id="message" class="message"></p>
     </div>
     <button class="back-btn" onclick="pindah('dashboard.php');">BACK</button>
 
@@ -55,14 +52,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['fish_name']) && isset
 
     <script src="script/fishing.js"></script>
 
-    <?php if (isset($success_message)) : ?>
-        <script>
-            alert("<?= $success_message ?>");
-        </script>
-    <?php elseif (isset($error_message)) : ?>
-        <script>
-            alert("<?= $error_message ?>");
-        </script>
-    <?php endif; ?>
+    <audio id="bgMusic" autoplay loop hidden>
+        <source src="assets/StardewValley_OST3.mp3" type="audio/mp3">
+    </audio>
+    <script src="script/musik.js"></script>
 </body>
 </html>

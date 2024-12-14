@@ -84,5 +84,10 @@ mysqli_close($connect);
             <button type="submit" class="btn">Sign Up</button>
         </form>
     </div>
+
+    <audio id="bgMusic" autoplay loop hidden>
+        <source src="assets/StardewValley_OST1.mp3" type="audio/mp3">
+    </audio>
+    <script src="script/musik.js"></script>
 </body>
 </html>
