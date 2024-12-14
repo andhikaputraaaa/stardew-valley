@@ -57,19 +57,25 @@ h1 {
   
   #fish {
     position: absolute;
-    width: 50px; /* Lebar ikan sama dengan fishing area */
+    width: 50px; 
     height: 20px;
-    background-color: #F8BA65;
-    border-radius: 5px;
+    z-index: 2;
+  }
+
+  #fish img {
+    width: 40px;
+    height: 40px;
   }
   
   #bar {
     position: absolute;
-    width: 46px; /* Lebar bar sama dengan fishing area */
+    width: 50px; /* Lebar bar sama dengan fishing area */
     height: 80px; /* Tinggi bar */
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 2px solid #ffffff;
+    background-color: #9BF301;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+    border: none;
     border-radius: 5px;
+    z-index: 1;
   }
   
   #controls {

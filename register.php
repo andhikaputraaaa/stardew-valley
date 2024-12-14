@@ -62,15 +62,15 @@ mysqli_close($connect);
                 <div class="form-group"><input type="text" id="lastname" name="lastname" placeholder="Last Name" autocomplete="off" required></div>
             </div>
             <div class="form-group">
-                <label for="email"><span class="icon">👤</span></label>
+                <label for="email"><img src="assets/user.png" alt="user"></label>
                 <input type="email" id="email" name="email" placeholder="Input your email here" autocomplete="off" required>
             </div>
             <div class="form-group">
-                <label for="password"><span class="icon">🔒</span></label>
+                <label for="password"><img src="assets/pass.png" alt="pass"></label>
                 <input type="password" id="password" name="password" placeholder="Input your password here" required>
             </div>
             <div class="form-group">
-                <label for="confirm-pass"><span class="icon">🔒</span></label>
+                <label for="confirm-pass"><img src="assets/pass.png" alt="pass"></label>
                 <input type="password" id="confirm-pass" name="confirm_pass" placeholder="Confirm your password here" required>
             </div>
             <div class="form-group">
@@ -78,6 +78,7 @@ mysqli_close($connect);
                     <option disabled selected>Choose your gender</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
+                    <option value="">I prefer not to say</option>
                 </select>
             </div>
             <button type="submit" class="btn">Sign Up</button>

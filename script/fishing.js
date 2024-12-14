@@ -14,6 +14,7 @@ let barPosition = 110;
 let fishPosition = 50;
 let progress = 0;
 let gameInterval, fishInterval;
+let gameTimeout;
 
 function moveBar(direction) {
   if (direction === 'up') {
@@ -78,13 +79,35 @@ function startGame() {
   fishInterval = setInterval(() => {
     moveFish();
   }, 200); // Interval gerakan ikan
+
+  // Set timeout untuk kegagalan permainan
+  clearTimeout(gameTimeout);
+  gameTimeout = setTimeout(() => {
+  if (progress < 100) {
+    endGame(false);
+  }
+ }, 20000); // Misalnya, permainan gagal jika tidak selesai dalam 30 detik
 }
 
-function endGame(won) {
+function endGame(success) {
   clearInterval(gameInterval);
   clearInterval(fishInterval);
-  startButton.textContent = won ? 'You Win! Play Again' : 'Play Again';
+  clearTimeout(gameTimeout);
+  startButton.textContent = 'Start Fishing';
   startButton.disabled = false;
+
+  if (success) {
+    completeGame();
+  } else {
+    alert("Game Over! Try again.");
+  }
+
+  // Reset posisi bar dan ikan
+  barPosition = 110;
+  fishPosition = 50;
+  bar.style.top = `${barPosition}px`;
+  fish.style.top = `${fishPosition}px`;
+  progress = 0;
 }
 
 startButton.addEventListener('click', () => {
@@ -98,3 +121,32 @@ upButton.addEventListener('click', () => {
 downButton.addEventListener('click', () => {
   moveBar('down');
 });
+
+// Data ikan
+const fishData = [
+  "Carp",
+  "Catfish",
+  "Eel",
+  "Lava Eel",
+  "Octopus",
+  "Pufferfish",
+  "Salmon",
+  "Sandfish",
+  "Sardine",
+  "Squid",
+  "StoneFish",
+  "Super Cucumber",
+  "Tuna"
+];
+
+// Fungsi untuk mendapatkan ikan secara acak
+function getRandomFish() {
+  const randomIndex = Math.floor(Math.random() * fishData.length);
+  return fishData[randomIndex];
+}
+
+// Fungsi untuk menyelesaikan game
+function completeGame() {
+  const caughtFish = getRandomFish();
+  alert(`Congratulations! You caught a ${caughtFish}!`);
+}

@@ -64,11 +64,11 @@ mysqli_close($connect);
         <img src="assets\chicken.png" class="logo">
         <form action="" method="post">
             <div class="form-group">
-            <label for="email"><span class="icon">👤</span></label>
+            <label for="email"><img src="assets/user.png" alt="user"></label>
             <input type="email" id="email" name="email" placeholder="Input your email here" autocomplete="off">
             </div>
             <div class="form-group">
-            <label for="password"><span class="icon">🔒</span></label>
+            <label for="password"><img src="assets/pass.png" alt="pass"></label>
             <input type="password" id="password" name="password" placeholder="Input your password here" autocomplete="off">
             </div>
             <button type="submit" class="btn">Sign In</button>

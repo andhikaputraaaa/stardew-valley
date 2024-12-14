@@ -36,6 +36,7 @@ h1{
 
 .form-group {
     display: flex;
+    height: 25px;
     align-items: center;
     background-color: #F8BA65;
     border: 2px solid #7F3701;
@@ -45,6 +46,11 @@ h1{
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
+.form-group img {
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 100%;
+}
 .fullname {
     display: flex;
     gap: 13px;
@@ -62,7 +68,7 @@ h1{
 input {
     border: none;
     outline: none;
-    background: none;
+    background-color: #F8BA65;
     font-size: 0.9rem;
     color: #612506;
     font-family: "Pixelify Sans", sans-serif;
@@ -83,13 +89,12 @@ select option:disabled {
     font-style: italic;
 }
 
-input::placeholder {
-    color: #C85124;
+option {
+    background-color: #F8BA65;
 }
 
-.icon {
-    font-size: 1.2rem;
-    margin-right: 15px;
+input::placeholder {
+    color: #C85124;
 }
 
 .btn {

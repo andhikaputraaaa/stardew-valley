@@ -42,6 +42,7 @@ mysqli_close($connect);
             </div>
             <div class="user-info">
                 <div class="box"><h2>Account</h2></div>
+                <p><?php echo htmlspecialchars($full_name) ?></p>
                 <p><?php echo htmlspecialchars($email); ?></p>
                 <a href="changepass.php">change password</a>
             </div>
@@ -53,6 +54,7 @@ mysqli_close($connect);
         </div>
         <!-- <button class="btn">LOG OUT</button> -->
     </div>
-    <button class="back-btn" onclick="window.history.back();">BACK</button>
+    <button class="back-btn" onclick="pindah('dashboard.php');">BACK</button>
+    <script src="script/fishing.js"></script>
 </body>
 </html>
